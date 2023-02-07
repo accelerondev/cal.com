@@ -9,6 +9,12 @@
       "plan": "heroku-postgresql:mini"
     }
   ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  },
   "env": {
     "PGSSLMODE": {
       "description": "If you use Heroku to deploy Postgres (or use self-signed certs for Postgres) then put 'no-verify' here.",
